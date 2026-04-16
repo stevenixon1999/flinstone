@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flinstone</title>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/flinstone.png">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="preloader">
+  <div class="loader-logo">
+      <img src="assets\flinstone.png" alt="logo">
+  </div>
+</div>
+
+<header class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets\flinstone2.png" alt="Logo">
+    </a>
+  </div>
+
+  <!-- NAV LINKS -->
+  <nav class="nav-links" id="navLinks">
+
+  <!-- CLOSE BUTTON -->
+  <div class="menu-close" id="menuClose">✕</div>
+
+  <!-- <a href="index.html">Home</a> -->
+  <a href="products.html">Products</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="account.html">Account</a>
+  <a href="contact.html" class="active">Contact</a>
+
+  <button class="enquire-btn mobile-enquire open-slider">
+    Enquire Now
+  </button>
+
+</nav>
+
+  <div class="nav-right">
+
+    <!-- Desktop Enquire -->
+    <button class="enquire-btn open-slider">
+      Enquire Now
+    </button>
+
+    <!-- Toggle -->
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+  </div>
+
+</header>
+
+<section class="contact-section">
+
+<div class="container">
+
+<h1 class="title">Contact Us</h1>
+<p class="subtitle">
+If you have any inquiries or require further information, please contact us using the form below.
+</p>
+
+<div class="contact-wrapper">
+
+<!-- CONTACT FORM -->
+
+<div class="contact-form">
+
+<form 
+action="https://formspree.io/f/xbdzdkgb"
+method="POST"
+id="contactForm">
+
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="name" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label>Subject</label>
+<input type="text" name="subject">
+</div>
+
+<div class="form-group">
+<label>Message</label>
+<textarea name="message" rows="5" required></textarea>
+</div>
+
+<input type="hidden" name="_subject" value="New Contact Message">
+
+<button type="submit" class="submit-btn">
+Send Message
+</button>
+
+<p id="formStatus"></p>
+
+</form>
+
+</div>
+
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info">
+
+<h3>Our Office</h3>
+
+<p>
+FLINSTONE TRADING FZCO.
+</p>
+
+<p>
+        Unit No.2606, The Dome Tower, Cluster 'N', Al Thanyah Fifth,<br>
+        Jumeirah Lake Towers,<br> 
+        Dubai, UAE
+      </p>
+
+<p>
+Email: admin@flinstonetrading.com
+</p>
+
+<p>
+Phone: +971 XXX XXX XXX
+</p>
+
+<div class="map">
+
+<iframe 
+src="https://www.google.com/maps?q=Dubai&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+
+<h2>FZCO</h2>
+
+<p>
+Flinstone Trading FZCO is a DMCC-based commodities trading company
+specializing in precious metals, diamonds, pearls, and colored gemstones
+across regional and international markets.
+</p>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Discover</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="account.html">Account</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Contacts</h4>
+
+<p>
+Unit No.2606, The Dome Tower, Cluster N,<br>
+Jumeirah Lake Towers,<br>
+Dubai, UAE
+</p>
+
+<p>info@flinstonetrading.com</p>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Socials</h4>
+
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<div class="footer-policies">
+<a href="#">Cookie Policy</a>
+<a href="#">Privacy Policy</a>
+</div>
+
+<div class="footer-copy">
+© FLINSTONE TRADING FZCO
+</div>
+
+</div>
+
+</footer>
+
+    
+<!-- JS -->
+<script src="js/script1.js"></script>
+<!-- ================= CONTACT SLIDER ================= -->
+<div class="contact-overlay"></div>
+
+<div class="contact-panel">
+
+  <div class="close-btn">&times;</div>
+
+  <div class="contact-wrapper">
+
+    <div class="contact-left">
+      <h1>Let’s Talk</h1>
+      <p>
+        Get in touch to see how Flinstone can transform your
+        processes and improve efficiency.
+      </p>
+    </div>
+
+    <div class="contact-right">
+      <h2>Fill the form below</h2>
+
+      <form id="contact-form">
+
+        <div class="row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <input type="text" name="company" placeholder="Company">
+
+        <!-- <div class="form-bottom">
+          <label class="checkbox">
+            <input type="checkbox" required>
+            I agree to the processing of my personal data and the Privacy Policy
+          </label> -->
+
+          <div class="submit-wrapper">
+            <button class="submit-btn">Submit</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

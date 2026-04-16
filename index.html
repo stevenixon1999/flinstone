@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flinstone</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/flinstone.png">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://s3.tradingview.com/tv.js"></script>
+
+</head>
+
+<body>
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="loader-logo">
+      <img src="assets\flinstone.png" alt="logo">
+  </div>
+</div>
+
+<header class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets\flinstone2.png" alt="Logo">
+    </a>
+  </div>
+
+  <!-- NAV LINKS -->
+  <nav class="nav-links" id="navLinks">
+
+  <!-- CLOSE BUTTON -->
+  <div class="menu-close" id="menuClose">✕</div>
+
+  <!-- <a href="index.html">Home</a> -->
+  <a href="products.html">Products</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="account.html">Account</a>
+  <a href="contact.html">Contact</a>
+
+  <button class="enquire-btn mobile-enquire open-slider">
+    Enquire Now
+  </button>
+
+</nav>
+
+  <div class="nav-right">
+
+    <!-- Desktop Enquire -->
+    <button class="enquire-btn open-slider">
+      Enquire Now
+    </button>
+
+    <!-- Toggle -->
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<div class="lime-wrapper">
+
+
+
+    <!-- <img 
+  class="lime-video" 
+  src="assets\hero-image.jpeg" 
+  alt="Gold Bars"> -->
+
+    <div class="lime-banner">
+      <div class="lime-banner-content">
+          <h1 class="heading">Trusted Precious Metals & Gemstone Trading from Dubai’s DMCC Hub
+        <h2>
+         Supplying gold, silver, platinum, palladium, diamonds, and certified gemstones through compliant sourcing, refining partnerships, and institutional grade trading operations.
+        </h2>
+      
+        <a href="contact.html" class="confirm-btn" >   Enquire Now<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+  <g class="gtm-sfb" clip-path="url(#clip0_9190_48475)">
+    <path class="gtm-sfb" d="M9.5 7.76867L15.6067 13.8887L9.5 20.0087L11.38 21.8887L19.38 13.8887L11.38 5.88867L9.5 7.76867Z" fill="white"></path>
+  </g>
+  <defs class="gtm-sfb">
+    <clipPath class="gtm-sfb" id="clip0_9190_48475">
+      <rect class="gtm-sfb" width="28" height="28" fill="white" transform="matrix(1 0 0 -1 0 28.248)"></rect>
+    </clipPath>
+  </defs>
+</svg></span></a>
+      </div>
+    </div>
+
+  
+</div>
+
+
+<!-- ================= SECTION 1 ================= -->
+<!-- <section class="minimal-section">
+  <div class="minimal-heading">
+    <h2>Why Trade With Us?</h2>
+  </div>
+
+  <div class="minimal-wrapper">
+
+    <div class="minimal-item">
+  <small>I.</small>
+  <h3>Gold Pricing</h3>
+  <p>Access transparent real-time gold prices directly linked to global exchanges.</p>
+</div>
+
+<div class="minimal-item">
+  <small>II.</small>
+  <h3>Real-Time Data</h3>
+  <p>Our pricing engine aggregates international markets to deliver accurate live data.</p>
+</div>
+
+<div class="minimal-item">
+  <small>III.</small>
+  <h3>Currency Valuation</h3>
+  <p>Track asset values instantly across <br> USD, AED, EUR, and <br>INR currencies.</p>
+</div>
+
+<div class="minimal-item">
+  <small>IV.</small>
+  <h3>Market Insights</h3>
+  <p>Stay informed with curated <br>market intelligence and <br>key economic trends.</p>
+</div>
+
+  </div>
+</section> -->
+<section class="consult-section">
+  <div class="consult-top">
+    <p class="consult-subtitle">HOW WE WORK</p>
+    <h2 class="consult-title">Why Trade With Us</h2>
+    <p class="consult-desc">
+     Built on regulatory compliance, trusted supplier networks, and strong refinery partnerships, we deliver secure and transparent precious metals and gemstone trading from Dubai’s DMCC hub.
+    </p>
+  </div>
+
+  <div class="consult-grid">
+
+    <div class="consult-card">
+      <span>01</span>
+      <h3>DMCC based operations</h3>
+      <p>Strategically located in Dubai’s leading global commodities trading hub</p>
+    </div>
+
+    <div class="consult-card">
+      <span>02</span>
+      <h3>Integrated sourcing & refining network</h3>
+      <p>Access to trusted suppliers, refineries, and institutional buyers</p>
+    </div>
+
+    <div class="consult-card">
+      <span>03</span>
+      <h3>Regulatory compliance</h3>
+      <p>Full alignment with UAE AML/CFT and responsible sourcing frameworks</p>
+    </div>
+
+    <div class="consult-card">
+      <span>04</span>
+      <h3>Multi commodity expertise</h3>
+      <p>Trading gold, silver, platinum, diamonds, pearls, and colored gemstones</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= SECTION 2 ================= -->
+<section class="upside-section">
+  <div class="upside-container">
+
+    <!-- LEFT SIDE -->
+    <div class="upside-left">
+      <small>OUR CORE SERVICES</small>
+      <h2>Precious Metals & Gemstone Trading Services</h2>
+      <p>
+        Delivering reliable sourcing and distribution of precious metals and gemstones through secure supplier partnerships and UAE-compliant trading operations.
+      </p>
+
+      <!-- ✅ CTA NOW VISIBLE -->
+      <div class="service-cta-wrapper">
+  <a href="services.html" class="service-cta">
+   Explore Our Core Services
+    <span class="service-arrow">→</span>
+  </a>
+</div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+   <div class="upside-right">
+
+  <div class="upside-item">
+    <div class="upside-content">
+      <h3>Precious Metals Trading</h3>
+      <p>
+        Trading bullion bars, doré, and semi processed metals including gold, silver, platinum, and palladium
+        through approved suppliers and institutional market participants.
+      </p>
+    </div>
+    <div class="upside-icon">
+      <i class="fas fa-coins"></i>
+    </div>
+  </div>
+
+
+  <div class="upside-item">
+    <div class="upside-content">
+      <h3>Pearls & Precious Stones Trading</h3>
+      <p>
+        Supply of certified diamonds, natural pearls, and colored gemstones such as ruby, sapphire, and emerald
+        sourced through verified international partners.
+      </p>
+    </div>
+    <div class="upside-icon">
+      <i class="fas fa-gem"></i>
+    </div>
+  </div>
+
+
+  <div class="upside-item">
+    <div class="upside-content">
+      <h3>International Commodity Trading</h3>
+      <p>
+        Import, export, and re-export of precious commodities supported by Dubai’s advanced logistics ecosystem
+        and strong global trade connectivity.
+      </p>
+    </div>
+    <div class="upside-icon">
+      <i class="fas fa-globe"></i>
+    </div>
+  </div>
+
+
+  <!-- NEW 4TH SERVICE -->
+
+  <div class="upside-item">
+    <div class="upside-content">
+      <h3>Secure Logistics & Refinery Coordination</h3>
+      <p>
+        Coordination with UAE based refineries for scrap gold processing and conversion into standardized
+        bullion, supported by secure storage and transport partners.
+      </p>
+    </div>
+    <div class="upside-icon">
+      <i class="fas fa-shield-halved"></i>
+    </div>
+  </div>
+
+</div>
+    
+  </div>
+</section>
+
+<!-- ================= CHART SECTION ================= -->
+<!-- ================= MARKET SECTION ================= -->
+<section class="market-section">
+
+  <div class="market-header">
+    <small>MARKET INSIGHTS</small>
+    <h2>Today’s Top Precious Metals</h2>
+  </div>
+
+  <!-- ================= PRICING CAROUSEL ================= -->
+<div class="ticker-wrapper custom-carousel">
+
+  <div class="ticker-track">
+
+  <div class="ticker-item">
+    <span class="symbol">Gold (XAUUSD)</span>
+    <span class="price">5206.17</span>
+    <span class="change positive">+13.25 (+0.26%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Silver (XAGUSD)</span>
+    <span class="price">87.85</span>
+    <span class="change negative">-1.73 (-1.94%)</span>
+  </div>
+  
+  <div class="ticker-item">
+    <span class="symbol">Platinum (XPTUSD)</span>
+    <span class="price">2189.55</span>
+    <span class="change negative">-18.45 (-0.84%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Palladium (XPDUSD)</span>
+    <span class="price">1685.00</span>
+    <span class="change positive">+8.75 (+0.52%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Copper</span>
+    <span class="price">5.93</span>
+    <span class="change positive">+0.01 (+0.24%)</span>
+  </div>
+  
+  <div class="ticker-item">
+    <span class="symbol">Aluminum</span>
+    <span class="price">3381.00</span>
+    <span class="change positive">+26.00 (+0.77%)</span>
+  </div>
+  
+  <div class="ticker-item">
+    <span class="symbol">Nickel</span>
+    <span class="price">17512.50</span>
+    <span class="change negative">-75.13 (-0.43%)</span>
+  </div>
+  
+  <div class="ticker-item">
+    <span class="symbol">Lead</span>
+    <span class="price">1948.05</span>
+    <span class="change positive">+2.72 (+0.14%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Zinc</span>
+    <span class="price">2455.40</span>
+    <span class="change negative">-12.15 (-0.49%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Tin</span>
+    <span class="price">32450</span>
+    <span class="change positive">+120 (+0.37%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Rhodium</span>
+    <span class="price">4800</span>
+    <span class="change positive">+35 (+0.74%)</span>
+  </div>
+
+  <div class="ticker-item">
+    <span class="symbol">Lithium</span>
+    <span class="price">13500</span>
+    <span class="change negative">-210 (-1.52%)</span>
+  </div>
+  
+</div>
+
+</div>
+
+  <!-- Buttons -->
+  <div class="metal-buttons">
+    <button data-symbol="OANDA:XAUUSD">XAUUSD</button>
+    <button data-symbol="OANDA:XAGUSD">XAGUSD</button>
+    <button data-symbol="OANDA:XPTUSD">XPTUSD</button>
+    <button data-symbol="OANDA:XPDUSD">XPDUSD</button>
+  </div>
+  
+  <!-- Chart -->
+  <div class="chart-wrapper">
+    <div id="tradingview_chart"></div>
+  </div>
+  
+</section>
+
+<section class="quote1-section">
+  <p></p>
+</section>
+<!-- ================= QUOTE CTA SECTION ================= -->
+
+<section class="quote-cta-container">
+
+  <div class="quote-cta-section">
+
+    <div class="quote-cta-wrapper">
+
+      <h2 class="quote-text">
+        "Partner with a trusted DMCC based precious metals and gemstone trading company."
+      </h2>
+
+      <div class="quote-buttons">
+
+        <a href="#" class="cta-btn secondary-btn open-slider">
+          Enquire Now
+        </a>
+
+        <a href="account.html" class="cta-btn primary-btn open-account-btn">
+          Contact Our Team
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+
+<h2>FZCO</h2>
+
+<p>
+Flinstone Trading FZCO is a DMCC-based commodities trading company
+specializing in precious metals, diamonds, pearls, and colored gemstones
+across regional and international markets.
+</p>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Discover</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="account.html">Account</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Contacts</h4>
+
+<p>
+Unit No.2606, The Dome Tower, Cluster N,<br>
+Jumeirah Lake Towers,<br>
+Dubai, UAE
+</p>
+
+<p>info@flinstonetrading.com</p>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Socials</h4>
+
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<div class="footer-policies">
+<a href="#">Cookie Policy</a>
+<a href="#">Privacy Policy</a>
+</div>
+
+<div class="footer-copy">
+© FLINSTONE TRADING FZCO
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+
+<!-- ================= CONTACT SLIDER ================= -->
+<div class="contact-overlay"></div>
+
+<div class="contact-panel">
+
+  <div class="close-btn">&times;</div>
+
+  <div class="contact-wrapper">
+
+    <div class="contact-left">
+      <h1>Let’s Talk</h1>
+      <p>
+        Get in touch to see how Flinstone can transform your
+        processes and improve efficiency.
+      </p>
+    </div>
+
+    <div class="contact-right">
+      <h2>Fill the form below</h2>
+
+      <form id="contact-form">
+
+        <div class="row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <input type="text" name="company" placeholder="Company">
+
+        <!-- <div class="form-bottom">
+          <label class="checkbox">
+            <input type="checkbox" required>
+            I agree to the processing of my personal data and the Privacy Policy
+          </label> -->
+
+          <div class="submit-wrapper">
+            <button class="submit-btn">Submit</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+<!-- Chart Script -->
+<script>
+new TradingView.widget({
+  width: "100%",
+  height: 600,
+  symbol: "OANDA:XAUUSD",
+  interval: "60",
+  timezone: "Asia/Kolkata",
+  theme: "light",
+  style: "1",
+  locale: "en",
+  toolbar_bg: "#f4f1ec",
+  enable_publishing: false,
+  hide_side_toolbar: false,
+  container_id: "tradingview_chart"
+});
+</script>
+</body>
+</html>

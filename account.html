@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flinstone</title>
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/flinstone.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="preloader">
+  <div class="loader-logo">
+      <img src="assets\flinstone.png" alt="logo">
+  </div>
+</div>
+
+  <header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets\flinstone2.png"
+          alt="Logo">
+      </a>
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="nav-links" id="navLinks">
+
+      <!-- CLOSE BUTTON -->
+      <div class="menu-close" id="menuClose">✕</div>
+
+      <!-- <a href="index.html">Home</a> -->
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="account.html" class="active">Account</a>
+      <a href="contact.html">Contact</a>
+
+      <button class="enquire-btn mobile-enquire open-slider">
+        Enquire Now
+      </button>
+
+    </nav>
+
+    <div class="nav-right">
+
+      <!-- Desktop Enquire -->
+      <button class="enquire-btn open-slider">
+        Enquire Now
+      </button>
+
+      <!-- Toggle -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="account-section">
+
+    <div class="container">
+
+      <h1 class="title">Open Your Account</h1>
+      <p class="subtitle">
+        Please complete the form below to initiate your account opening process.
+        All information provided will remain confidential.
+      </p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data"
+        class="account-form" id="accountForm">
+
+        <!-- ENTITY INFORMATION -->
+
+        <h3 class="form-heading">Entity Information</h3>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Full Name of Legal Entity</label>
+            <input type="text" name="entity_name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Principal Place of Business</label>
+            <input type="text" name="business_place" required>
+          </div>
+
+          <div class="form-group">
+            <label>Registered Office</label>
+            <input type="text" name="registered_office">
+          </div>
+
+          <div class="form-group">
+            <label>Fiscal Residence</label>
+            <input type="text" name="fiscal_residence">
+          </div>
+
+          <div class="form-group">
+            <label>Corporate Registration Number</label>
+            <input type="text" name="reg_number">
+          </div>
+
+          <div class="form-group">
+            <label>Legal Structure</label>
+            <input type="text" name="legal_structure">
+          </div>
+
+        </div>
+
+        <!-- CONTACT DETAILS -->
+
+        <h3 class="form-heading">Contact Information</h3>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Telephone</label>
+            <input type="tel" name="telephone">
+          </div>
+
+          <div class="form-group">
+            <label>Contact Person</label>
+            <input type="text" name="contact_person">
+          </div>
+
+          <div class="form-group">
+            <label>Website</label>
+            <input type="url" name="website">
+          </div>
+
+          <div class="form-group">
+            <label>Date & Place of Incorporation</label>
+            <input type="text" name="incorporation">
+          </div>
+
+        </div>
+
+        <!-- BUSINESS DETAILS -->
+
+        <h3 class="form-heading">Business Details</h3>
+
+        <div class="form-group full">
+          <label>Ownership Details</label>
+          <textarea name="ownership_details"></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label>Describe Business Activities</label>
+          <textarea name="business_activity"></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label>Purpose of Relationship with Company</label>
+          <textarea name="purpose"></textarea>
+        </div>
+
+        <!-- CLASSIFICATION -->
+
+        <h3 class="form-heading">Client Classification</h3>
+
+        <div class="form-group full">
+
+          <select name="classification">
+
+            <option value="">Select Classification</option>
+            <option>HNWIs & their vehicles</option>
+            <option>Family Office</option>
+            <option>Institutional Client</option>
+            <option>Trusts / Endowments / Charities</option>
+
+          </select>
+
+        </div>
+
+        <!-- DOCUMENT UPLOAD -->
+
+        <h3 class="form-heading">Required Documents</h3>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Shareholder Certificate</label>
+            <input type="file" name="shareholder_doc">
+          </div>
+
+          <div class="form-group">
+            <label>Passport Copies</label>
+            <input type="file" name="passport_docs">
+          </div>
+
+          <div class="form-group">
+            <label>Director Documents</label>
+            <input type="file" name="director_docs">
+          </div>
+
+          <div class="form-group">
+            <label>Bank Proof</label>
+            <input type="file" name="bank_proof">
+          </div>
+
+        </div>
+
+        <input type="hidden" name="_subject" value="New Account Opening Application">
+
+        <div class="submit-wrapper">
+          <button class="submit-btn">Submit Application</button>
+        </div>
+
+        <p id="formStatus"></p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+
+<h2>FZCO</h2>
+
+<p>
+Flinstone Trading FZCO is a DMCC-based commodities trading company
+specializing in precious metals, diamonds, pearls, and colored gemstones
+across regional and international markets.
+</p>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Discover</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="account.html">Account</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Contacts</h4>
+
+<p>
+Unit No.2606, The Dome Tower, Cluster N,<br>
+Jumeirah Lake Towers,<br>
+Dubai, UAE
+</p>
+
+<p>info@flinstonetrading.com</p>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Socials</h4>
+
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<div class="footer-policies">
+<a href="#">Cookie Policy</a>
+<a href="#">Privacy Policy</a>
+</div>
+
+<div class="footer-copy">
+© FLINSTONE TRADING FZCO
+</div>
+
+</div>
+
+</footer>
+
+
+  <!-- JS -->
+  <script src="js/script1.js"></script>
+  <!-- ================= CONTACT SLIDER ================= -->
+  <div class="contact-overlay"></div>
+
+  <div class="contact-panel">
+
+    <div class="close-btn">&times;</div>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-left">
+        <h1>Let’s Talk</h1>
+        <p>
+          Get in touch to see how Flinstone can transform your
+          processes and improve efficiency.
+        </p>
+      </div>
+
+      <div class="contact-right">
+        <h2>Fill the form below</h2>
+
+        <form id="contact-form">
+
+          <div class="row">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+
+          <input type="text" name="company" placeholder="Company">
+
+          <!-- <div class="form-bottom">
+          <label class="checkbox">
+            <input type="checkbox" required>
+            I agree to the processing of my personal data and the Privacy Policy
+          </label> -->
+
+          <div class="submit-wrapper">
+            <button class="submit-btn">Submit</button>
+          </div>
+      </div>
+
+      </form>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
