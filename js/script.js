@@ -46,6 +46,15 @@ document.addEventListener("DOMContentLoaded", function(){
 gsap.registerPlugin(ScrollTrigger);
 
 /* =============================
+   FULL PAGE PANEL SCROLL
+============================= */
+
+/* =============================
+   STACKED PANEL SCROLL EFFECT
+============================= */
+
+
+/* =============================
    LIME VIDEO SCROLL EFFECT
 ============================= */
 
@@ -93,7 +102,7 @@ const observer = new IntersectionObserver(entries=>{
   });
 },{threshold:0.4});
 
-observer.observe(document.querySelector(".quote-cta-section"));
+// observer.observe(document.querySelector(".quote-cta-section"));
 
 /* =============================
    MINIMAL SECTION ANIMATION
@@ -203,6 +212,20 @@ gsap.fromTo(".upside-left p",
   }
 );
 
+gsap.fromTo(".upside-left a",
+  { y: 40, opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 1.2,
+    delay: 0.4,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".upside-section",
+      start: "top 80%"
+    }
+  }
+);
 
 gsap.fromTo(".upside-item",
   { y: 50, opacity: 0 },
@@ -256,16 +279,16 @@ loadChart();
    QUOTE SECTION
 ============================= */
 
-gsap.to(".quote-text", {
-  scrollTrigger: {
-    trigger: ".quote-cta-section",
-    start: "top 80%",
-  },
-  scale: 1,
-  opacity: 1,
-  duration: 1.8,
-  ease: "power3.out"
-});
+// gsap.to(".quote-text", {
+//   scrollTrigger: {
+//     trigger: ".quote-cta-section",
+//     start: "top 80%",
+//   },
+//   scale: 1,
+//   opacity: 1,
+//   duration: 1.8,
+//   ease: "power3.out"
+// });
 
 gsap.to(".quote-buttons", {
   scrollTrigger: {
@@ -278,34 +301,75 @@ gsap.to(".quote-buttons", {
   delay: 0.4,
   ease: "power3.out"
 });
+
+
+
 window.addEventListener("load", () => {
 
   const tl = gsap.timeline();
 
-  // Circle appear
-  tl.to(".logo-circle", {
-    scale: 1,
-    duration: 1,
-    ease: "back.out(1.7)"
+  /* ================= PRELOADER TEXT ================= */
+
+  tl.to(".brand-title", {
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    ease: "power3.out"
   })
 
-  // Logo reveal
-  .to(".loader-logo", {
+  .to(".brand-divider h1", {
     opacity: 1,
-    scale: 1,
-    duration: 0.9,
-    ease: "power3.out"
-  }, "-=0.5")
+    y: 0,
+    duration: 0.4
+  }, "-=0.3")
 
-  // Small pause
-  .to({}, { duration: 0.6 })
+  .to(".line.left", {
+    scaleX: 1,
+    duration: 0.8,
+    ease: "power2.out"
+  }, "-=0.2")
 
-  // Preloader exit (smooth slide up)
+  .to(".line.right", {
+    scaleX: 1,
+    duration: 0.8,
+    ease: "power2.out"
+  }, "<")
+
+  /* ================= PRELOADER EXIT ================= */
+
   .to("#preloader", {
     y: "-100%",
-    duration: 1.2,
+    duration: 0.5,
     ease: "power4.inOut"
-  });
+  })
+
+  /* ================= HERO TEXT ANIMATION ================= */
+
+  .fromTo(".heading",
+  {
+    opacity: 0,
+    scale: 0.92,
+    y: 80
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 1.2,
+    ease: "power4.out"
+  })
+
+  .fromTo(".lime-banner-content h2",
+  {
+    opacity: 0,
+    y: 40
+  },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.6");
 
 });
 
@@ -322,10 +386,10 @@ window.addEventListener("load", () => {
 // });
 
 // quoteObserver.observe(quoteSection);
-window.addEventListener("load", function() {
-  const quoteSection = document.querySelector(".quote-cta-section");
-  quoteSection.classList.add("in-view");
-});
+// window.addEventListener("load", function() {
+//   const quoteSection = document.querySelector(".quote-cta-section");
+//   quoteSection.classList.add("in-view");
+// });
 /* =============================
    CONTACT SLIDER
 ============================= */
@@ -412,3 +476,7 @@ window.addEventListener("load", () => {
 
 //   banner.style.transform = `translateY(${offset}px)`;
 // });
+
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
+});

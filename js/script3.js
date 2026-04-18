@@ -175,30 +175,84 @@ window.addEventListener("load", () => {
 
   const tl = gsap.timeline();
 
-  // Circle appear
-  tl.to(".logo-circle", {
-    scale: 1,
-    duration: 1,
-    ease: "back.out(1.7)"
+  /* ================= PRELOADER TEXT ================= */
+
+  tl.to(".brand-title", {
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    ease: "power3.out"
   })
 
-  // Logo reveal
-  .to(".loader-logo", {
+  .to(".brand-divider h1", {
     opacity: 1,
-    scale: 1,
-    duration: 0.9,
-    ease: "power3.out"
-  }, "-=0.5")
+    y: 0,
+    duration: 0.4
+  }, "-=0.3")
 
-  // Small pause
-  .to({}, { duration: 0.6 })
+  .to(".line.left", {
+    scaleX: 1,
+    duration: 0.8,
+    ease: "power2.out"
+  }, "-=0.2")
 
-  // Preloader exit (smooth slide up)
+  .to(".line.right", {
+    scaleX: 1,
+    duration: 0.8,
+    ease: "power2.out"
+  }, "<")
+
+  /* ================= PRELOADER EXIT ================= */
+
   .to("#preloader", {
     y: "-100%",
-    duration: 1.2,
+    duration: 0.5,
     ease: "power4.inOut"
-  });
+  })
+
+  /* ================= HERO TEXT ANIMATION ================= */
+
+  .fromTo(".about-hero-new span",
+  {
+    opacity: 0,
+    scale: 0.92,
+    y: 80
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 0.5,
+    ease: "power4.out"
+  })
+
+   .fromTo(".about-hero-new h1",
+  {
+    opacity: 0,
+    scale: 0.92,
+    y: 80
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 0.8,
+    ease: "power3.out"
+  })
+
+  .fromTo(".about-hero-new p",
+  {
+    opacity: 0,
+    y: 40
+  },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.6");
+
+  
 
 });
 gsap.registerPlugin(ScrollTrigger);
