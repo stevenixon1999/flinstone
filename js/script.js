@@ -355,7 +355,7 @@ window.addEventListener("load", () => {
     opacity: 1,
     scale: 1,
     y: 0,
-    duration: 1.2,
+    duration: 2,
     ease: "power4.out"
   })
 
@@ -367,7 +367,7 @@ window.addEventListener("load", () => {
   {
     opacity: 1,
     y: 0,
-    duration: 1,
+    duration: 1.2,
     ease: "power3.out"
   }, "-=0.6");
 
