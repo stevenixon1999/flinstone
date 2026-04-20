@@ -2896,9 +2896,10 @@ body{
   padding-top:50px;
 }
   .service-hero h1{
-    font-size:30px;
+    font-size:36px;
     font-weight:500;
-    letter-spacing: normal;
+    line-height: 1.1;
+    letter-spacing: -3px;
   }
 
   .stack-card{
