@@ -1711,10 +1711,10 @@ body{
 }
 .tradingview-widget-container {
   border-radius: 6px;
-  background: transparent;
+  background: #fff;
 }
 .tv-embed-widget-wrapper__body{
-  background: transparent;
+  background: #fff;
 }
 
 /* Track */
@@ -2197,9 +2197,11 @@ html, body {
 @media (max-width: 768px){
 
   .market-section{
-    padding: 90px 5%;
+    padding: 90px 0%;
   }
-
+.market-header{
+  padding: 0 16px;
+}
   .market-header h2{
     font-size: 28px;
     line-height: 38px;
@@ -2216,6 +2218,7 @@ html, body {
 
   .metal-buttons{
     gap: 12px;
+    padding: 0 16px;
   }
 
   .metal-buttons button{
@@ -3661,4 +3664,13 @@ font-size: 14px;
 .quote-data .heading-text{
 font-size: 26px;
 }
+}
+
+#widget-ticker-tape-container{
+  background: #fff;
+}
+
+.phone-link {
+  color: inherit;
+  text-decoration: none;
 }
