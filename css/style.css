@@ -821,7 +821,7 @@ html, body {
 @media (max-width: 600px) {
 
   .consult-section {
-    padding: 100px 16px 80px 16px;
+    padding: 100px 16px 80px 32px;
     text-align: left;
   }
 
@@ -901,7 +901,7 @@ html, body {
 /* ===== Services Section ===== */
 .upside-section {
   background: #f0e6d5;
-  padding: 20px 10% 120px 8%;
+  padding: 20px 10% 120px 120px;
   position: relative;
   z-index: 5;
   /* font-family: 'Poppins', sans-serif; */
@@ -1168,7 +1168,7 @@ html, body {
 @media (max-width: 768px) {
 
   .upside-section {
-    padding: 10px 5%;
+    padding: 10px 16px 10px 32px;
   }
 
   .upside-left small {
@@ -1222,7 +1222,7 @@ html, body {
 @media (max-width: 480px) {
 
   .upside-section {
-    padding: 10px 20px;
+    padding: 10px 16px 10px 32px;
   }
 
   .upside-left h2 {
@@ -1371,7 +1371,7 @@ html, body {
   }
 
   .upside-section{
-    padding:10px 5%;
+    padding:10px 16px 10px 32px;
   }
 
   .upside-container{
@@ -1482,9 +1482,10 @@ html, body {
   line-height:1.6;
   /* padding-right: 420px; */
 }
-.footer-col a{
-      margin: 0 25px 14px 25px;
+.footer-top .footer-col:last-child a{
+        margin: 0 25px 14px 25px;
 }
+
 .footer-col a svg{
   width: 20px;
   height: 20px;
@@ -1577,6 +1578,9 @@ html, body {
   .footer-container{
     padding:0 45px;
   }
+  .footer-col{
+    padding-left: 0;
+  }
 
   .footer-top{
     grid-template-columns:1fr 1fr;
@@ -1612,7 +1616,7 @@ html, body {
   .footer-top{
     grid-template-columns:1fr;
     gap:25px;
-    padding-left:20px;
+    padding:0 20px 0 32px;
   }
 
   .footer-bottom{
@@ -2979,7 +2983,7 @@ body{
 /* ================= ABOUT PAGE NEW ================= */
 
 .about-new{
-  padding: 0px 32px 10px 32px;
+  padding: 0px 32px 10px 46px;
   background:#f0e6d5;
   color:#1a1a1a;
 }
@@ -3178,7 +3182,7 @@ margin: 120px 0;
   }
 
   .about-hero-text p{
-    margin:auto;
+    margin:0 auto 0 0;
   }
 
   .about-overview{
@@ -3197,7 +3201,7 @@ margin: 120px 0;
 @media(max-width:768px){
 
   .about-new{
-    padding:130px 6% 0px 6%;
+    padding:130px 32px 0px 32px;
   }
   .about-hero-new{
     margin-bottom: 0;
